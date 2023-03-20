@@ -3,10 +3,11 @@
 <head>
   <meta charset="utf-8">
   <meta name="description"
-        content="Deformable Neural Radiance Fields creates free-viewpoint portraits (nerfies) from casually captured videos.">
-  <meta name="keywords" content="Nerfies, D-NeRF, NeRF">
+        content="Neural Motion Transfer methods are used as a training data augmentation technique to improve machine learning models for camera physiological sensing.">
+  <meta name="keywords" content="rPPG, Remote Photoplethysmography, Motion Transfer, Data Augmentation">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Nerfies: Deformable Neural Radiance Fields</title>
+  <title>Motion Matters: Neural Motion Transfer for Better Camera Physiological Sensing
+  </title>
 
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
         rel="stylesheet">
@@ -18,7 +19,7 @@
   <link rel="stylesheet"
         href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <link rel="stylesheet" href="./static/css/index.css">
-  <link rel="icon" href="./static/images/favicon.svg">
+  <!-- <link rel="icon" href="./static/images/favicon.svg"> -->
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script defer src="./static/js/fontawesome.all.min.js"></script>
@@ -36,15 +37,33 @@
           <h1 class="title is-1 publication-title">Motion Matters: Neural Motion Transfer for Better Camera Physiological Sensing</h1>
           <div class="is-size-5 publication-authors">
             <span class="author-block">
-              Anonymized Authors
+              <a href="https://www.cs.unc.edu/~akshaypa/">Akshay Paruchuri</a><sup>1</sup>,</span>
+            <span class="author-block">
+              <a href="https://xliucs.github.io/">Xin Liu</a><sup>2</sup>,</span>
+            <span class="author-block">
+              Yulu Pan<sup>1</sup>,
             </span>
+            <span class="author-block">
+              <a href="https://homes.cs.washington.edu/~shwetak/">Shwetak Patel</a><sup>2</sup>,
+            </span>
+            <span class="author-block">
+              <a href="http://alumni.media.mit.edu/~djmcduff/">Daniel McDuff</a><sup>2</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://www.cs.unc.edu/~ronisen/">Soumyadip Sengupta</a><sup>1</sup>
+            </span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup>1</sup>UNC Chapel Hill,</span>
+            <span class="author-block"><sup>2</sup>University of Washington</span>
           </div>
 
           <div class="column has-text-centered">
             <div class="publication-links">
               <!-- PDF Link. -->
               <span class="link-block">
-                <a href="./static/paper/iccv_2023_submission_1080.pdf"
+                <a href="./static/paper/paruchuri2023motionmatters.pdf"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fas fa-file-pdf"></i>
@@ -54,7 +73,7 @@
               </span>
               <!-- Code Link. -->
               <span class="link-block">
-                <a href="https://github.com/anon-iccv-2023-id-1080/rppg_video_motion_augmentation"
+                <a href="https://github.com/Roni-Lab/MA-rPPG-Video-Toolbox"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fab fa-github"></i>
@@ -67,6 +86,20 @@
           </div>
         </div>
       </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <video id="teaser" autoplay muted loop playsinline height="100%">
+        <source src="./static/videos/ubfc-rppg_aug_examples.mp4"
+                type="video/mp4">
+      </video>
+      <h2 class="subtitle has-text-centered">
+        Examples of motion augmentation as applied to the UBFC-rPPG dataset. The driving videos utilized are from the TalkingHead-1KH dataset.
+      </h2>
     </div>
   </div>
 </section>
@@ -157,7 +190,7 @@
             Machine learning models for camera-based physiological measurement can have weak generalization due to a lack of representative training data. Body motion is one of the most significant sources of noise when attempting to recover the subtle cardiac pulse from a video. We explore motion transfer as a form of data augmentation to introduce motion variation while preserving physiological changes. We adapt a neural video synthesis approach to augment videos for the task of remote photoplethysmography (PPG) and study the effects of motion augmentation with respect to 1) the magnitude and 2) the type of motion.
           </p>
           <p>
-            After training on motion-augmented versions of publicly available datasets, the presented inter-dataset results on five benchmark datasets show improvements of up to 75% over existing state-of-the-art results. Our findings illustrate the utility of motion transfer as a data augmentation technique for improving the generalization of models for camera-based physiological sensing. We release our code and pre-trained models for using motion transfer as a data augmentation technique.
+            After training on motion-augmented versions of publicly available datasets, the presented inter-dataset results on five benchmark datasets show improvements of up to 75% over existing state-of-the-art results. Our findings illustrate the utility of motion transfer as a data augmentation technique for improving the generalization of models for camera-based physiological sensing. We release our code and pre-trained models for using motion transfer as a data augmentation technique on our project page.
           </p>
         </div>
       </div>
@@ -166,36 +199,41 @@
   </div>
 </section>
 
-
 <section class="section">
   <div class="container is-max-desktop">
-
-    <!-- <div class="columns is-centered">
-
-        <h3 class="title is-4">Re-rendering the input video</h3>
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Additional Materials</h2>
         <div class="content has-text-justified">
           <p>
-            Using <span class="dnerf">Nerfies</span>, you can re-render a video from a novel
-            viewpoint such as a stabilized camera by playing back the training deformations.
+            In addition to motion augmentation pipeline code, we provide <a href="https://github.com/Roni-Lab/MA-rPPG-Video-Toolbox/tree/main/pretrained_models">pre-trained models</a> and <a href="https://github.com/Roni-Lab/MA-rPPG-Video-Toolbox/tree/main/motion_analysis">motion analysis scripts</a> that leverage <a href="https://github.com/TadasBaltrusaitis/OpenFace">OpenFace</a> in our <a href="https://github.com/Roni-Lab/MA-rPPG-Video-Toolbox">GitHub repository</a>.
           </p>
         </div>
-        <div class="content has-text-centered">
-          <video id="replay-video"
-                 controls
-                 muted
-                 preload
-                 playsinline
-                 width="75%">
-            <source src="./static/videos/replay.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-
       </div>
-    </div> -->
-
+    </div>
+    <!--/ Abstract. -->
   </div>
 </section>
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>Check back here soon for a BibTeX citation!</code></pre>
+  </div>
+</section>
+
+<!-- <section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@article{park2021nerfies,
+  author    = {Park, Keunhong and Sinha, Utkarsh and Barron, Jonathan T. and Bouaziz, Sofien and Goldman, Dan B and Seitz, Steven M. and Martin-Brualla, Ricardo},
+  title     = {Nerfies: Deformable Neural Radiance Fields},
+  journal   = {ICCV},
+  year      = {2021},
+}</code></pre>
+  </div>
+</section> -->
 
 <footer class="footer">
   <div class="container">
