@@ -1,4 +1,4 @@
-# Motion Matters:<br/>Neural Motion Transfer for Better Camera Physiological Sensing
+# Motion Matters: Neural Motion Transfer for Better Camera Physiological Sensing
 
 This is the repository that contains source code for the [project website](https://motion-matters.github.io) associated with the [MA-rPPG-Video-Toolbox](https://github.com/Roni-Lab/MA-rPPG-Video-Toolbox).
 
