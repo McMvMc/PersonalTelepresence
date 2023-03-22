@@ -98,11 +98,18 @@
   <div class="container is-max-desktop">
     <div class="hero-body">
       <video id="teaser" preload='auto' autoplay muted loop playsinline height="100%">
-        <source src="./static/videos/ubfc-rppg_aug_examples_V4.mp4"
+        <source src="./static/videos/ubfc-rppg_aug_examples_V5.mp4"
                 type="video/mp4">
       </video>
       <h2 class="subtitle has-text-centered">
         Examples of motion augmentation as applied to the UBFC-rPPG dataset. The driving videos utilized are from the TalkingHead-1KH dataset.
+      </h2>
+
+      <center><img src="./static/images/Teaser_Figure.png" 
+      width="500" 
+      height="300" /></center>
+      <h2 class="subtitle has-text-centered">
+        Our neural motion augmentation pipeline for the task of remote PPG estimation reduces error in heart rate estimation by up to 75%.
       </h2>
     </div>
   </div>
@@ -195,6 +202,42 @@
           </p>
           <p>
             After training on motion-augmented versions of publicly available datasets, the presented inter-dataset results on five benchmark datasets show improvements of up to 75% over existing state-of-the-art results. Our findings illustrate the utility of motion transfer as a data augmentation technique for improving the generalization of models for camera-based physiological sensing. We release our code and pre-trained models for using motion transfer as a data augmentation technique on our project page.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Pipeline</h2>
+        <div class="content has-text-justified">
+          <p>
+            <center><img src="./static/images/ArchDiagram.png" 
+              width="900" 
+              height="700" /></center>
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Results</h2>
+        <div class="content has-text-justified">
+          <p>
+            In addition to motion augmentation pipeline code, we provide <a href="https://github.com/Roni-Lab/MA-rPPG-Video-Toolbox/tree/main/pretrained_models">pre-trained models</a> and <a href="https://github.com/Roni-Lab/MA-rPPG-Video-Toolbox/tree/main/motion_analysis">motion analysis scripts</a> that leverage <a href="https://github.com/TadasBaltrusaitis/OpenFace">OpenFace</a> in our <a href="https://github.com/Roni-Lab/MA-rPPG-Video-Toolbox">GitHub repository</a>.
           </p>
         </div>
       </div>
