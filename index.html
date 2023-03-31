@@ -3,10 +3,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="description"
-        content="Neural Motion Transfer methods are used as a training data augmentation technique to improve machine learning models for camera physiological sensing.">
-  <meta name="keywords" content="rPPG, Remote Photoplethysmography, Motion Transfer, Data Augmentation">
+        content="Bringing Telepresence to Every Desk">
+  <meta name="keywords" content="Telepresence, Novel View Synthesis">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Motion Matters: Neural Motion Transfer for Better Camera Physiological Sensing
+  <title>Bringing Telepresence to Every Desk
   </title>
 
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
@@ -34,55 +34,80 @@
     <div class="container is-max-desktop">
       <div class="columns is-centered">
         <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title">Motion Matters: Neural Motion Transfer for Better Camera Physiological Sensing</h1>
-          <div class="is-size-5 publication-authors">
+          <h1 class="title is-1 publication-title">Bringing Telepresence to Every Desk</h1>
+          <div class="is-size-4 publication-authors">
             <span class="author-block">
-              <a href="https://www.cs.unc.edu/~akshaypa/">Akshay Paruchuri</a><sup>1</sup>,</span>
+<!--              <a href="">Shengze Wang</a><sup>1</sup>,</span>-->
+              Shengze Wang, </span>
             <span class="author-block">
-              <a href="https://xliucs.github.io/">Xin Liu</a><sup>2</sup>,</span>
+<!--              <a href="">Ziheng Wang</a><sup>2</sup>,</span>-->
+              Ziheng Wang, </span>
             <span class="author-block">
-              Yulu Pan<sup>1</sup>,
+<!--              Yulu Pan<sup>1</sup>,-->
+              Ryan Schmelzle,
             </span>
             <span class="author-block">
-              <a href="https://homes.cs.washington.edu/~shwetak/">Shwetak Patel</a><sup>2</sup>,
+<!--              <a href="https://homes.cs.washington.edu/~shwetak/">Shwetak Patel</a><sup>2</sup>,-->
+              Youngjoong Kwon,
             </span>
             <span class="author-block">
-              <a href="http://alumni.media.mit.edu/~djmcduff/">Daniel McDuff</a><sup>*,2</sup>,
+<!--              <a href="http://alumni.media.mit.edu/~djmcduff/">Daniel McDuff</a><sup>*,2</sup>,-->
+              Liujie Zheng,
             </span>
             <span class="author-block">
-              <a href="https://www.cs.unc.edu/~ronisen/">Soumyadip Sengupta</a><sup>*,1</sup>
+              <a href="https://www.cs.unc.edu/~ronisen/">Soumyadip Sengupta, </a>
+            </span>
+            <span class="author-block">
+              <a href="https://henryfuchs.web.unc.edu/">Henry Fuchs</a>
             </span>
           </div>
 
           <div class="is-size-5 publication-authors">
-            <span class="author-block"><sup>1</sup>UNC Chapel Hill,</span>
-            <span class="author-block"><sup>2</sup>University of Washington</span>
+            <span class="author-block">UNC Chapel Hill</span>
           </div>
 
-          <div class="is-size-5 publication-authors">
-            <span class="author-block"><sup>*</sup>denotes equal advising</span>
-          </div>
+<!--          <div class="is-size-5 publication-authors">-->
+<!--            <span class="author-block"><sup>*</sup>denotes equal advising</span>-->
+<!--          </div>-->
 
           <div class="column has-text-centered">
             <div class="publication-links">
               <!-- PDF Link. -->
               <span class="link-block">
-                <a href="https://arxiv.org/abs/2303.12059"
+                <a href=""
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fas fa-file-pdf"></i>
                   </span>
-                  <span>Paper</span>
+                  <span>Paper (Arxiv) </span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a href="./Bringing_Telepresence_to_Every_Desk__Arxiv_.pdf"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper (PDF) </span>
                 </a>
               </span>
               <!-- Code Link. -->
               <span class="link-block">
-                <a href="https://github.com/Roni-Lab/MA-rPPG-Video-Toolbox"
+                <a href=""
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fab fa-github"></i>
                   </span>
-                  <span>Code</span>
+                  <span>Code (Coming Soon)</span>
+                  </a>
+              </span>
+              <span class="link-block">
+                <a href=""
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Dataset (Coming Soon)</span>
                   </a>
               </span>
             </div>
@@ -97,97 +122,23 @@
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
-      <video id="teaser" preload='auto' autoplay muted loop playsinline height="100%">
-        <source src="./static/videos/ubfc-rppg_aug_examples_V5.mp4"
-                type="video/mp4">
-      </video>
-      <h2 class="subtitle has-text-centered">
-        Examples of motion augmentation as applied to the UBFC-rPPG dataset. The driving videos utilized are from the TalkingHead-1KH dataset.
-      </h2>
-
-      <center><img src="./static/images/Teaser_Figure.png" 
-      width="400" 
-      height="300" /></center>
-      <h2 class="subtitle has-text-centered">
-        Our neural motion augmentation pipeline for the task of remote PPG estimation reduces error in heart rate estimation by up to 75%.
-      </h2>
-    </div>
-  </div>
-</section>
-
-<!-- <section class="hero teaser">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-      <video id="teaser" autoplay muted loop playsinline height="100%">
-        <source src="./static/videos/teaser.mp4"
-                type="video/mp4">
-      </video>
-      <h2 class="subtitle has-text-centered">
-        <span class="dnerf">Nerfies</span> turns selfie videos from your phone into
-        free-viewpoint
-        portraits.
-      </h2>
-    </div>
-  </div>
-</section>
-
-
-<section class="hero is-light is-small">
-  <div class="hero-body">
-    <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-steve">
-          <video poster="" id="steve" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/steve.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-chair-tp">
-          <video poster="" id="chair-tp" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/chair-tp.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-shiba">
-          <video poster="" id="shiba" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/shiba.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-fullbody">
-          <video poster="" id="fullbody" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/fullbody.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-blueshirt">
-          <video poster="" id="blueshirt" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/blueshirt.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-mask">
-          <video poster="" id="mask" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/mask.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-coffee">
-          <video poster="" id="coffee" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/coffee.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-toby">
-          <video poster="" id="toby" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/toby2.mp4"
-                    type="video/mp4">
-          </video>
+      <p style="margin-top: -20px;">
+      <center><img src="./teaser.png"
+      style="max-width: 100%;"/></center>
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3"><p style="padding-top: 50px;"> Video Introduction (with Audio) </h2>
         </div>
       </div>
+      <hr style="margin-top:0px">
+
+      <video id="teaser" preload='auto' autoplay loop playsinline height="100%" controls>
+        <source src="./main_video.mp4"
+                type="video/mp4">
+      </video>
     </div>
   </div>
-</section> -->
+</section>
 
 
 <section class="section">
@@ -196,31 +147,26 @@
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
         <h2 class="title is-3">Abstract</h2>
+        <hr style="margin-top:0px">
         <div class="content has-text-justified">
           <p>
-            Machine learning models for camera-based physiological measurement can have weak generalization due to a lack of representative training data. Body motion is one of the most significant sources of noise when attempting to recover the subtle cardiac pulse from a video. We explore motion transfer as a form of data augmentation to introduce motion variation while preserving physiological changes. We adapt a neural video synthesis approach to augment videos for the task of remote photoplethysmography (PPG) and study the effects of motion augmentation with respect to 1) the magnitude and 2) the type of motion.
+            In this paper, we work to bring telepresence to every
+desktop. Unlike commercial systems, personal 3D video
+conferencing systems must render high-quality videos while
+remaining financially and computationally viable for the
+average consumer. To this end, we introduce a capturing
+and rendering system that only requires 4 consumer-grade
+RGBD cameras and synthesizes high-quality free-viewpoint
+videos of users as well as their environments.
           </p>
           <p>
-            After training on motion-augmented versions of publicly available datasets, the presented inter-dataset results on five benchmark datasets show improvements of up to 75% over existing state-of-the-art results. Our findings illustrate the utility of motion transfer as a data augmentation technique for improving the generalization of models for camera-based physiological sensing. We release our code and pre-trained models for using motion transfer as a data augmentation technique on our project page.
-          </p>
-        </div>
-      </div>
-    </div>
-    <!--/ Abstract. -->
-  </div>
-</section>
-
-<section class="section">
-  <div class="container is-max-desktop">
-    <!-- Abstract. -->
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Pipeline</h2>
-        <div class="content has-text-justified">
-          <p>
-            <center><img src="./static/images/ArchDiagram.png" 
-              width="900" 
-              height="700" /></center>
+            Experimental results show that our system renders high-quality
+            free-viewpoint videos without using object templates
+or heavy pre-processing. While not real-time, our system is
+fast and does not require per-video optimizations. Moreover, our system is robust to complex hand gestures and
+clothing, and it can generalize to new users. This work provides a strong basis for further optimization, and it will help
+bring telepresence to every desk in the near future. The code
+and dataset will be made available.
           </p>
         </div>
       </div>
@@ -229,19 +175,70 @@
   </div>
 </section>
 
+
 <section class="section">
   <div class="container is-max-desktop">
     <!-- Abstract. -->
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
-        <h2 class="title is-3">Results</h2>
+        <h2 class="title is-3">Overview</h2>
+        <hr style="margin-top:0px">
         <div class="content has-text-justified">
           <p>
-            <center><img src="./static/images/mm_results.png" 
-              width="1200" 
+            <center><img src="./overview.png"
+              width="1200"
               height="800" /></center>
-              Please refer to our <a href="https://arxiv.org/abs/2303.12059">pre-print</a> for the full results, including ablation studies.
+              Our system utilizes 4 RGBD cameras to render high-resolution (1280x960) free-viewpoint videos.
+            We propose Multi-Layer Point Cloud (MPC), a new volumetric representation for RGBD inputs which enables more
+            efficient and accurate reconstruction than conventional novel view depth sweep volumes. We further improve
+          the stability and accuracy via a temporal renderer and Spatial Skip Connections. Please refer to the paper for more details.
           </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Free-Viewpoint Videos Test Results</h2>
+        <div class="content has-text-justified">
+
+        <hr style="margin-top:10px">
+        <p class="columns is-centered"><b>Target</b>&nbsp; User (in training data), &nbsp;<b>New</b>&nbsp; Clothing (not in training data)</p>
+        <video preload='auto' autoplay muted loop playsinline height="100%">
+          <source src="./test9.mp4" type="video/mp4">
+        </video>
+
+        <hr style="margin-top:10px">
+        <p class="columns is-centered"><b>Target</b>&nbsp; User (in training data), &nbsp;<b>New</b>&nbsp; Clothing (not in training data)</p>
+        <video preload='auto' autoplay muted loop playsinline height="100%">
+          <source src="./test1.mp4" type="video/mp4">
+        </video>
+
+        <hr style="margin-top:10px">
+        <p class="columns is-centered"><b>Target</b>&nbsp; User (in training data), &nbsp;<b>New</b>&nbsp; Clothing (not in training data)</p>
+        <video preload='auto' autoplay muted loop playsinline height="100%">
+          <source src="./test2.mp4" type="video/mp4">
+        </video>
+
+        <hr style="margin-top:10px">
+        <p class="columns is-centered"><b>New</b>&nbsp; User (not in training data)</p>
+        <video preload='auto' autoplay muted loop playsinline height="100%">
+          <source src="./test5.mp4" type="video/mp4">
+        </video>
+
+        <hr style="margin-top:10px">
+        <p class="columns is-centered"><b>New & Target</b>&nbsp; Users</p>
+        <video preload='auto' autoplay muted loop playsinline height="100%">
+          <source src="./test7.mp4" type="video/mp4">
+        </video>
+
         </div>
       </div>
     </div>
@@ -254,10 +251,16 @@
     <!-- Abstract. -->
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
-        <h2 class="title is-3">Additional Materials</h2>
+        <h2 class="title is-3">Comparisons</h2>
+        <hr style="margin-top:0px">
         <div class="content has-text-justified">
+          <video preload='auto' autoplay loop playsinline height="100%" controls>
+            <source src="./comparisons.mp4"
+                    type="video/mp4">
+          </video>
           <p>
-            In addition to motion augmentation pipeline code, we provide <a href="https://github.com/Roni-Lab/MA-rPPG-Video-Toolbox/tree/main/pretrained_models">pre-trained models</a> and <a href="https://github.com/Roni-Lab/MA-rPPG-Video-Toolbox/tree/main/motion_analysis">motion analysis scripts</a> that leverage <a href="https://github.com/TadasBaltrusaitis/OpenFace">OpenFace</a> in our <a href="https://github.com/Roni-Lab/MA-rPPG-Video-Toolbox">GitHub repository</a>.
+              Comparisons with Microsoft VirtualCube, t-NeRF+DSNeRF, DynamicNeRF+DSNeRF, ENeRF, and ENeRF+Depth.
+          Recent Approaches Suffer due to sparse viewpoints with wide baselines
           </p>
         </div>
       </div>
@@ -266,31 +269,21 @@
   </div>
 </section>
 
-<section class="section" id="BibTeX">
-  <div class="container is-max-desktop content">
-    <h2 class="title">BibTeX</h2>
-    <pre><code>@misc{paruchuri2023motion,
-      title={Motion Matters: Neural Motion Transfer for Better Camera Physiological Sensing}, 
-      author={Akshay Paruchuri and Xin Liu and Yulu Pan and Shwetak Patel and Daniel McDuff and Soumyadip Sengupta},
-      year={2023},
-      eprint={2303.12059},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV}
-}</code></pre>
-  </div>
-</section>
 
-<!-- <section class="section" id="BibTeX">
-  <div class="container is-max-desktop content">
-    <h2 class="title">BibTeX</h2>
-    <pre><code>@article{park2021nerfies,
-  author    = {Park, Keunhong and Sinha, Utkarsh and Barron, Jonathan T. and Bouaziz, Sofien and Goldman, Dan B and Seitz, Steven M. and Martin-Brualla, Ricardo},
-  title     = {Nerfies: Deformable Neural Radiance Fields},
-  journal   = {ICCV},
-  year      = {2021},
-}</code></pre>
-  </div>
-</section> -->
+<!--<section class="section" id="BibTeX">-->
+<!--  <div class="container is-max-desktop content">-->
+<!--    <h2 class="title">BibTeX</h2>-->
+<!--    <pre><code>@misc{paruchuri2023motion,-->
+<!--      title={Motion Matters: Neural Motion Transfer for Better Camera Physiological Sensing},-->
+<!--      author={Akshay Paruchuri and Xin Liu and Yulu Pan and Shwetak Patel and Daniel McDuff and Soumyadip Sengupta},-->
+<!--      year={2023},-->
+<!--      eprint={2303.12059},-->
+<!--      archivePrefix={arXiv},-->
+<!--      primaryClass={cs.CV}-->
+<!--}</code></pre>-->
+<!--  </div>-->
+<!--</section>-->
+
 
 <footer class="footer">
   <div class="container">
