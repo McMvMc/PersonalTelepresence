@@ -2,7 +2,7 @@
 
 This is the code repository for the paper "Bringing Telepresence to Every Desk".
 
-[project website](https://PersonalTelepresence.github.io).
+[project website](https://mcmvmc.github.io/PersonalTelepresence/).
 
 Repo in progress, please check back later
 
